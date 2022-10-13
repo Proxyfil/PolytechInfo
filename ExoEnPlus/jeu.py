@@ -14,21 +14,21 @@ class jeu():
             self.croix[1] = joueur
             self.liste_coups = []
         if self.croix[0] == 3:
-            print("trop jouer")
+            #print("trop jouer")
             return False
         """Verification que la case est bien dans le tableau"""
         if cases[0] > 2 or cases[1] > 2:
-            print("case pas dans le tableau")
+            #print("case pas dans le tableau")
             return False
         """Verification que la case est vide"""
         if self.tableau[cases[1]][cases[0]] != 0:
-            print("case deja prise")
+            #print("case deja prise")
             return False
         """Vérifie que tous les coups jouées sont bien sur la même ligne ou meme colonne mais pas en diagonale"""
         if len(self.liste_coups) > 0:
             for i in self.liste_coups:
                 if i[0] != cases[0] and i[1] != cases[1]:
-                    print("coups impossible")
+                    #print("coups impossible")
                     return False
         if len(self.liste_coups) == 3:
             return False
@@ -41,3 +41,15 @@ class jeu():
 
     def get_tableau(self):
         return self.tableau
+
+    def ia(tableau,coup):
+        poss3 = [[["X","X","X"],["0","0","0"],["0","0","0"]],[["X","0","0"],["X","0","0"],["X",]]]
+        nbx = 0
+        if(coup == 1):
+            for i in tableau:
+                for j in i:
+                    if(i == "X"):
+                        nbx += 1
+            
+            if(nbx == 3):
+                tableauid = poss3.index(tableau)
