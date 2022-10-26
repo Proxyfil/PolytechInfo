@@ -374,4 +374,28 @@ def ensemble(R):
     return set(R)
 
 def identite(E):
-    
+    "une relation pour laquelle chaque élément de E est en relation avec lui-même."
+    return [(x,x) for x in E]
+
+def est_reflexive(R):
+    E = ensemble(R)
+    I = identite(E)
+    return set(I).issubset(set(R))
+
+def est_symetrique(R):
+    return set([(y,x) for (x,y) in R]).issubset(set(R))
+
+def est_antisymetrique(R):
+    return set([(x,y) for (x,y) in R if x!=y]).issubset(set(R))
+
+def est_transitive(R):
+    return set([(x,z) for (x,y) in R for (y2,z) in R if y==y2]).issubset(set(R))
+
+def composee(R,S):
+    return set([(x,z) for (x,y) in R for (y2,z) in S if y==y2])
+
+def est_ordre(R):
+    return est_reflexive(R) and est_antisymetrique(R) and est_transitive(R)
+
+def est_equivalence(R):
+    return est_reflexive(R) and est_symetrique(R) and est_transitive(R)
