@@ -51,7 +51,7 @@ def valeursCommunes(l1,l2):
     l1set = set(l1)
     l2set = set(l2)
     for element in l1set:
-        if element not in l2set:
+        if element in l2set:
             lresult.append(int(element))
     return lresult
 
