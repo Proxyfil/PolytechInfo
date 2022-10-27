@@ -21,19 +21,21 @@ def h(n):
 """
 Les fonctions f,g et h sont récursives.
 En effet, elles ont toutes un cas de base et un cas récursif.
+
+La fonction f a pour cas de base 0<=n<=7 et pour cas récursif n>7.
+La fonction g a pour cas de base n>=6 et pour cas récursif n<6.
+La fonction h a pour cas de base n<=10 et pour cas récursif n>10.
 """
 
 #Exercice 2:
 
-def newton(p,n):
-    if n==p:
+def binome(n, p):
+    if p == n:
         return 1
-    if n==1:
-        return p
-    if p == 0:
+    elif p == 0:
         return 1
-    else:
-        return p*newton(p,n-1)
+    elif 0<=p<=n:
+        return binome(n-1, p-1) + binome(n-1, p)
 
 #Exercice 3:
 
