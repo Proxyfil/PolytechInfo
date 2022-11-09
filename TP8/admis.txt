@@ -1,0 +1,4 @@
+Roulat : 18.1
+Tendre : 16.5
+Riss : 10
+Pimprenelle : 13.8
