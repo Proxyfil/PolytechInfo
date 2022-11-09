@@ -1,0 +1,15 @@
+Afrique du sud,745
+Arabie saoudite,665
+Australie,1704
+Bahreïn,913
+Brésil,962
+Canada,2858
+Chine,27517
+Émirats arabes unis,2296
+États-unis,1710
+Inde,1767
+Islande,749
+Mozambique,564
+Norvège,1195
+Qatar,612
+Russie,3488

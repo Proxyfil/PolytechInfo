@@ -1,0 +1,8 @@
+Roulat : 18.1
+Vidal : Défaillant
+Tendre : 16.5
+Bruté : 5.4
+Garant : DEFAILLANT
+Riss : 10
+Vorace : 8.9
+Pimprenelle : 13.8
