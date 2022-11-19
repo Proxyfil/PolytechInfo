@@ -1,20 +1,15 @@
-
-NbPoints = 0
-
 class Point(object):
+    nbPoints = 0
     def __init__(self, nom, xy : tuple):
-        global NbPoints
         self.nom = nom
         self.xy = xy
-        NbPoints += 1
+        Point.nbPoints += 1
     def affich(self):
         print(self.nom, self.xy)
     def nbDePoints(self):
-        global NbPoints
-        return NbPoints
+        return Point.nbPoints
     def destructeur(self):
-        global NbPoints
-        NbPoints -= 1
+        Point.nbPoints -= 1
         del self
     def milieu(self, p2):
         return Point("Milieu", ((self.xy[0]+p2.xy[0])/2, (self.xy[1]+p2.xy[1])/2))
@@ -30,4 +25,4 @@ Points1.affich()
 Points2.affich()
 Points3.affich()
 Points1.destructeur()
-print(NbPoints)
+print(Point.nbPoints)

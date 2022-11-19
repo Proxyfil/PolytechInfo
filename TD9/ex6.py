@@ -1,6 +1,5 @@
-nbPerso = 0
-
-class Personnage(object):
+class Personnage():
+    nbPerso = 0
     def __init__(self, nom, position : tuple, pointsVie, pointsAttaque, pointsDefense):
         global nbPerso
         self.nom = nom
@@ -9,13 +8,12 @@ class Personnage(object):
         self.pointsAttaque = pointsAttaque
         self.pointsDefense = pointsDefense
         self.nbClone = 0
-        nbPerso += 1
+        Personnage.nbPerso += 1
     def __del__(self):
-        global nbPerso
-        nbPerso -= 1
+        del self
+        Personnage.nbPerso -= 1
     def destructeur(self):
-        global nbPerso
-        nbPerso -= 1
+        Personnage.nbPerso -= 1
         del self
     def affiche(self):
         print(self.nom, self.position, self.pointsVie, self.pointsAttaque, self.pointsDefense)
@@ -32,9 +30,8 @@ class Personnage(object):
         self.nbClone += 1
         return Personnage(self.nom+str(self.nbClone), self.position, self.pointsVie, self.pointsAttaque, self.pointsDefense)
     @staticmethod
-    def nbPerso():
-        global nbPerso
-        return nbPerso
+    def NbPerso():
+        return Personnage.nbPerso
     @staticmethod
     def regle_attaque():
         return "La distance entre les deux personnages doit être inférieure ou égale à 10."
@@ -60,6 +57,6 @@ Jean.deplace((17, 18))
 Jean.affiche()
 Paul.affiche()
 print(Personnage.regle_attaque())
-print(Personnage.nbPerso())
+print(Personnage.NbPerso())
 Marc.destructeur()
-print(Personnage.nbPerso())
+print(Personnage.NbPerso())
