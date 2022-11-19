@@ -15,7 +15,7 @@ def rectangle(x, y, h, v):
     turtle.forward(v)
     turtle.left(90)
 
-def cercle(self, x, y, r):
+def cercle(x, y, r):
     turtle.penup()
     turtle.goto(x, y)
     turtle.pendown()
