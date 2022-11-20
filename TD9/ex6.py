@@ -10,7 +10,6 @@ class Personnage():
         self.nbClone = 0
         Personnage.nbPerso += 1
     def __del__(self):
-        del self
         Personnage.nbPerso -= 1
     def destructeur(self):
         Personnage.nbPerso -= 1

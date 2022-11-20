@@ -1,0 +1,27 @@
+import tkinter as tk
+from tkinter import messagebox
+
+fen = tk.Tk()
+fen.title("Poésie :-)")
+fr = tk.Frame(fen)
+fr.config(width=200, height=200,background="lightgreen")
+fr.pack()
+
+menubar = tk.Menu(fr)
+menu1 = tk.Menu(menubar, tearoff=0)
+menubar.add_cascade(label="XIXème", menu=menu1)
+menu1.add_command(label="Victor Hugo", command=lambda : messagebox.showinfo(title="Victor Hugo", message="Demain, dès l'aube, à l'heure où blanchit la campagne,\nJe partirai. Vois-tu, je sais que tu m'attends.\nJ'irai par la forêt, j'irai par la montagne.\nJe ne puis demeurer loin de toi plus longtemps."),)
+menu1.add_separator()
+menu1.add_command(label="Charles Baudelaire", command=lambda : messagebox.showinfo(title="Charles Baudelaire", message="Là, tout n'est qu'ordre et beauté,\nLuxe, calme et volupté."))
+menu1.add_separator()
+menu1.add_command(label="Paul Verlaine", command=lambda : messagebox.showinfo(title="Paul Verlaine", message="Il pleure dans mon cœur\nComme il pleut sur la ville ;\nQuelle est cette langueur\nQui pénètre mon cœur ?"))
+menu2 = tk.Menu(menubar, tearoff=0)
+menubar.add_cascade(label="XXème", menu=menu2)
+menu2.add_command(label="Guillaume Apollinaire", command=lambda : messagebox.showinfo(title="Guillaume Apollinaire", message="Vienne la nuit sonne l'heure\nLes jours s'en vont je demeure."))
+menu2.add_separator()
+menu2.add_command(label="Louis Aragon", command=lambda : messagebox.showinfo(title="Guillaume Apollinaire", message="Que serais-je sans toi qui vins à ma rencontre\nQue serais-je sans toi qu'un cœur au bois dormant\nQue cette heure arrêtée au cadran de la montre\nQue serais-je sans toi que ce balbutiement."))
+menu3 = tk.Menu(menubar, tearoff=0)
+menubar.add_cascade(label="Fin", menu=menu3)
+menu3.add_command(label="Fermer", command=fen.destroy)
+fen.config(menu=menubar)
+fen.mainloop()

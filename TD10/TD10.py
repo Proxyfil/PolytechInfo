@@ -61,7 +61,6 @@ class Controle():
     def __del__(self):
         del Controle.defaut[self.date]
         Controle.nbControles -= 1
-        del self
     @staticmethod
     def nbMesuresDefauts():
         total_defauts = 0
