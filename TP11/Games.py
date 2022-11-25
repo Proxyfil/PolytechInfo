@@ -14,6 +14,7 @@ class Games(object):
         self.menubar.add_command(label="Smileys", command=self.lancementExemple1)
         self.menubar.add_command(label="Devinette", command=self.lancementExemple2)
         self.menubar.add_command(label="Jeux des trois symboles", command=self.lancementExemple3)
+        self.menubar.add_command(label="Pendu", command=self.lancementExemple4)
         self.menubar.add_command(label="Quitter", command=self.master.destroy)
         self.master.config(menu=self.menubar)
 
@@ -29,6 +30,8 @@ class Games(object):
         ex.JustePrix(self.master)
     def lancementExemple3(self):
         ex.Jeu_Des_Trois_Symboles(self.master)
+    def lancementExemple4(self):
+        ex.Pendu(self.master)
 
 def main():
     fenetre = tk.Tk()
@@ -38,3 +41,9 @@ def main():
  
 if __name__ == '__main__':
     main()
+
+def division(a,b):
+    if b == 0:
+        return 0
+    else:
+        return division(a,b-1) + a
