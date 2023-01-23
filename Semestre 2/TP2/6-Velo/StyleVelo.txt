@@ -1,0 +1,21 @@
+/* Style attendu pour Vélo */
+
+couleur de fond : skyblue
+
+titre : centré 
+        1ère lettre en italique, deux fois plus grande, de couleur #BB00FB
+
+paragraphe : gras, texte blue
+
+
+liste : puce en chiffres romains majuscules
+
+
+tableau : bordure noire en pointillés
+          entête tableau : fond rgb(0,127,238)
+          corps du tableau : fond rgb(120,177,248)
+
+          bordure des cellules noires 1pt
+
+page séparée en deux blocs côte à côte
+ 

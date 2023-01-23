@@ -1,0 +1,23 @@
+/* Feuille de style pour exemple.html */
+h1 {
+    border : double darkorange 3pt;
+    font-family : Arial;
+    font-size : 16pt;
+    text-align : center;
+    color : blue;
+    background-color: #ddf; /* expliquer la couleur */
+    margin : 10pt;
+    padding : 3pt;
+   }
+   p {
+    font-weight : bold;
+    color : #555;
+    margin-left : 20px;
+   }
+   ul {
+    font-style : italic;
+    color : rgb(0,175,0); /* expliquer la couleur */
+    background-color : #ccc; /* expliquer le rendu */
+    width : 50%;
+   }
+   

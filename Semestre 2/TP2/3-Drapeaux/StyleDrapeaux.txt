@@ -1,0 +1,12 @@
+Style attendu pour Drapeaux
+
+Pour tout le document : fond image "collines.jpg" (une seule fois)
+
+Pour le titre : bordure bleu foncé (navy) 3px, texte centré bleu foncé, largeur de l'élément 60%, marge à gauche 10%
+
+Pour le sous-titre : souligné
+
+Pour les items des listes : marge basse 20px
+
+Pour les liens : texte gras Courier New fuchsia
+

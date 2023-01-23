@@ -1,0 +1,19 @@
+Style attendu pour Aluminium:
+
+Pour tout le document : fond rgb(204,255,255), police Times New Roman, bleu foncé (navy)
+
+Pour h1 bordure double blanche 3px, fond bleu foncé (navy), texte centré, blanc, 18px, largeur 60%
+
+Pour h2 texte 16px, souligné, rouge
+ 
+Pour h3 texte 14px, italique, vert, marge à gauche 5px
+
+Pour p texte justifié, gras, marge à gauche 10px
+
+Pour ul texte gras, puces carrées, marge à gauche 15px
+
+Pour ol texte gras, puces chiffres romains en minuscule, marge à gauche 15px
+
+
+
+

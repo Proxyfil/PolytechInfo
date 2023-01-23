@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(204,255,255);
+    font-family: 'Times New Roman', Times, serif;
+    color: navy;
+}
+
+h1 {
+    border: double white 3px;
+    background-color: navy;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    width: 60%;
+}
+
+h2{
+    font-size: 16px;
+    text-decoration: underline;
+    color: red;
+}
+
+h3 {
+    font-size: 14px;
+    font-style: italic;
+    color: green;
+    margin-left: 5px;
+}
+
+p {
+    text-align: justify;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+ul {
+    font-weight: bold;
+    list-style-type: square;
+    margin-left: 15px;
+}
+
+ol {
+    font-weight: bold;
+    list-style-type: lower-roman;
+    margin-left: 15px;
+}

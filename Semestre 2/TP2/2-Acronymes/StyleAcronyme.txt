@@ -1,0 +1,38 @@
+Style attendu pour Acronymes 
+
+Pour h1 : bordure effet 3D(clair/foncé) bleu foncé (navy) épaisseur 10px, 
+          fond #DDA0DD, 
+          texte police Arial, 16px, centré, bleu foncé (navy), 
+          marges intérieures 5px, largeur de l'élément 30%, marge droite et gauche auto, marge du dessous 20px
+
+Pour p : texte gras, violet
+
+Pour a : police Courier New, fond #D8BFD8
+
+Pour table : fond rgb(255,105,180), largeur de l'élément 50%, marge gauche et marge droite auto, bordure noire 1px
+
+Pour th, td : bordure noire 1px
+
+Pour thead : texte centré, hauteur de l'entête 30px
+
+Pour tbody : fond rgb(255,192,203)
+      
+Rajouter une classe pour le paragraphe du haut (afin de le différentier du paragraphe du bas) :
+
+.definition : bordure effet 3D(foncé/clair) #4B0082 5px, fond rgb(176,224,230)
+
+
+Rajouter une classe pour quelques termes :
+
+.bordure : bordure blanche pointillé 3px, marge intérieure gauche 3px, droite 5px, texte en #FF00FF
+
+Pour la liste de définitions :
+
+L'ensemble est sur un fond gris (#ddd), en laissant 50px à gauche et à droite.
+À l'intérieur, il y a une zone vide de 20px
+
+Le terme à définir est en gras
+
+La zone contenant la définition des sur fond blanc, avec des coins arrondis de 5px (border-radius). On laisse un espace en haut et en bas de 10px et de 5px sur les cotés. La zone a une ombre portée (box-shadow) grise (#888) de 5px à droite, 3px en bas, un flou de 3px. Sous une définition, il y a une marge de 10px. 
+
+Enfin, entre le paragraphe du haut et le premier titre (tableau), il y a 100px

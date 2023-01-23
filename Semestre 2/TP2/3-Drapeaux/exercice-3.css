@@ -1,0 +1,27 @@
+body {
+    background-image: url("./Collines.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    border: 3px solid navy;
+    text-align: center;
+    color: navy;
+    width: 60%;
+    margin-left: 10%;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+a {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: fuchsia;
+}

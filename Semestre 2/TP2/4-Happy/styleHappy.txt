@@ -1,0 +1,27 @@
+/* Style attendu pour Happy */
+
+couleur de fond rgb(138,64,164)
+
+titre : fond navy
+        bordure 3D blanche 3px
+        marges intérieures 10px
+        texte centré blanc 
+        largeur du titre 60%, centré
+
+sous-titre : taille 16px souligné couleur #DF01A5
+             mettre une petite marge gauche
+ 
+texte des paroles : gras Times New Roman 12px couleur #610B4B
+
+image : largeur 160px
+
+ligne : largeur 30%, hauteur 5px , fond #F000F0;
+
+colonne Gauche : fond #DBC1F5, décaler un peu du haut, 
+                 ajouter un peu d'espace à droite pour décoller le texte du bord
+
+
+colonne Droite : fond #DBC1FB, décaler un peu du haut, 
+                 ajouter un peu d'espace à droite pour décoller le texte du bord
+
+photo à replacer

@@ -1,0 +1,23 @@
+style attendu pour Schtroumpf
+
+titre : bordure simple de couleur #0000AA d'épaisseur 3pt
+        police de couleur #BB0000, texte centré
+        marge intérieure de 3pt
+        marge extérieure haute et basse de 5pt
+        réduire l'élément et le centrer
+        fond couleur #B0E0E6
+
+sous-titre : de couleur #0000BB, souligné
+
+liste : puces en cercles
+
+tableau fond #B0E0E6
+        bordure navy
+ 
+entête du tableau : 1ère ligne fond couleur #00CEAA bordurées couleur navy 
+                    cellules 2ème ligne fond couleur #87CEFA bordurées couleur navy 
+
+cellules du corps du tableau : hauteur 100pt, bordure gray
+
+Lorsque l'on survole les cellules de la colonne de gauche, 
+on doit voir apparaître le schtroumpf correspondant.
