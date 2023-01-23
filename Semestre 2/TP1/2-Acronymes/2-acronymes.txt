@@ -1,0 +1,31 @@
+ Un acronyme est un sigle que l'on prononce comme un mot, comme par exemple AFNOR (Association Française de NORmalisation). Par extension cela désigne aussi une expression réduite à quelques lettres (initiales le plus souvent). Nous donnons dans le tableau ci-dessous quelques exemples en anglais.
+
+Exemple de présentation avec un tableau
+
+Acronyme  Expression associée
+DWISNWID  Do What I Say, Not What I Do
+ETA   Estimated Time of Arrival
+F2F   Face to Face
+IMHO  In My Humble Opinion
+IYSWIM  If You See What I Mean
+RUOK  Are you OK ?
+@TEOTD  at The End Of The Day
+
+Exemple de présentation avec une liste
+
+DWISNWID
+    Do What I Say, Not What I Do
+ETA
+    Estimated Time of Arrival
+F2F
+    Face to Face
+IMHO
+    In My Humble Opinion
+IYSWIM
+    If You See What I Mean
+RUOK
+    Are you OK ?
+@TEOTD
+    at The End Of The Day
+
+Un acronyme inconnu ? Allez sur AcronymFinder ! 

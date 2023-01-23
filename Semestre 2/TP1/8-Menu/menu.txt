@@ -1,0 +1,24 @@
+Menu du restaurant
+
+Bonjour et bienvenue à tous! Profitez de nos formules à prix attrayants...
+
+menu 1
+
+    Crudités
+    Poulet-frites
+    Glace
+
+	
+menu 2
+
+    Charcuterie
+    Poisson-pommes vapeur
+    Fromage
+
+menu 3
+
+    Chèvre chaud
+    Entrecôte-haricots verts
+    Salade de fruits
+
+nous contacter
