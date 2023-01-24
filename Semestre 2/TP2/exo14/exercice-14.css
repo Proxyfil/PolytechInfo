@@ -1,0 +1,23 @@
+#articles {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 10px;
+
+    width: 800px;
+
+    background-color: #999;
+
+    padding: 10px;
+}
+
+.article {
+    width: 250px;
+
+    background-color: white;
+
+    padding: 1em;
+}
+
+img {
+    width: 100%;
+}
