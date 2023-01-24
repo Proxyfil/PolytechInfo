@@ -3,6 +3,7 @@
 <head>
 <title>Exercice 7</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="exercice-7.css">
 </head>
 <body>
 <h1>Histoire du cinéma</h1>
@@ -15,6 +16,8 @@
     Les travaux de Thomas Edison, inventeur du phonographe en 1877, inspirent par la suite Auguste Baron
     qui fait breveter en 1896, un système permettant d'enregistrer isolément le son et l'image et 
     de les synchroniser lors de la projection.</p>
+    <flexbox>
+    <div class="gauche">
 <fieldset>
     <legend>Quelques films célèbres</legend> <!-- titre de l’encadré -->
     <ul>
@@ -24,11 +27,8 @@
         <li>Le Cirque de Charlie Chaplin (1928)</li>
     </ul>
 </fieldset>
-</br>
-<img src="AfficheFilmLumiere.jpg">
-
 <table>
-    <caption></br>Films muets après l'invention du parlant</caption>
+    <caption>Films muets après l'invention du parlant</caption>
     <thead>
         <tr>
             <th>Année</th>
@@ -54,6 +54,11 @@
         </tr>
     </tbody>
 </table>
+</div>
+<div class="droite">
+<img src="AfficheFilmLumiere.jpg">
+</div>
+</flexbox>
 <hr>
 </body>
 </html>

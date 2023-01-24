@@ -1,0 +1,23 @@
+body{
+    background-color: gray;
+}
+
+#drapeau{
+    display: grid;
+    grid: 500px / 200px 200px 200px;
+}
+
+.bleu{
+    background-color: blue;
+    grid-column: 1;
+}
+
+.blanc{
+    background-color: white;
+    grid-column: 2;
+}
+
+.rouge{
+    background-color: red;
+    grid-column: 3;
+}

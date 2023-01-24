@@ -1,0 +1,67 @@
+body{
+    background-color: #FEE9D8;
+}
+
+h1{
+    border: 2px double #DEB887;
+    text-align: center;
+    color: #DEB887;
+    width: 60%;
+    margin-left: 10%;
+}
+
+legend,caption{
+    font-weight: bold;
+}
+
+
+
+h1::first-letter{
+    font-size: 2.5em;
+    font-style: italic;
+    color: #A52A2A;
+}
+
+p::first-letter{
+    font-weight: bold;
+    font-size: 2.5em;
+    font-style: italic;
+    color: #A52A2A;
+}
+
+fieldset{
+    width: 60%;
+    border: 2px solid #A52A2A;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+table{
+    background-color: #DEB887;
+    border: 2px groove #A52A2A;
+}
+
+td,th{
+    border: 1px solid #A52A2A;
+}
+
+hr{
+    border: 2px groove #A52A2A;
+    padding: 1px;
+    width: 100%;
+}
+
+flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+}
+
+.gauche{
+    width: 70%;
+}

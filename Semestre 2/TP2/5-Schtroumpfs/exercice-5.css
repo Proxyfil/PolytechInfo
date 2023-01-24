@@ -1,0 +1,69 @@
+h1{
+    border: 3pt #0000AA solid;
+    color: #BB0000;
+    text-align: center;
+    padding: 6pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    background-color: #B0E0E6;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    color: #0000BB;
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+table{
+    background-color: #B0E0E6;
+    border: 3pt navy solid;
+}
+
+thead{
+    background-color: #00CEAA;
+    border: 3pt navy solid;
+}
+
+td{
+    height: 100pt;
+    border: 3pt gray solid;
+}
+
+#cellule1{
+    border: 3pt navy solid;
+}
+
+#cellule2{
+    background-color: #87CEFA;
+    border: 3pt navy solid;
+}
+
+td#str1:hover{
+    background: url(grandSchtroumpf.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td#str2:hover{
+    background: url(schtroumpfALunettes.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td#str3:hover{
+    background: url(schtroumpfFarceur.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td#str4:hover{
+    background: url(schtroumpfette.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

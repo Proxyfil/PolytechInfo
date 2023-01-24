@@ -1,0 +1,43 @@
+body{
+    background-color: skyblue;
+}
+
+h1{
+    text-align: center;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+h1::first-letter{
+    font-style: italic;
+    font-size: 2em;
+    color: #BB00FB
+}
+
+p{
+    font-weight: bold;
+    color: blue;
+}
+
+table{
+    border: 3px dotted black;
+}
+
+th{
+    background-color: rgb(0,127,238);
+    border: 1pt solid black;
+}
+
+td{
+    background-color: rgb(120,177,248);
+    border: 1pt solid black;
+}
+
+flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

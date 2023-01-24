@@ -1,0 +1,29 @@
+#drapeau{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+}
+
+.rouge1{
+    background-color: red;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.jaune1{
+    background-color: yellow;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.rouge2{
+    background-color: red;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.jaune2{
+    background-color: yellow;
+    grid-column: 1;
+    grid-row: 2;
+}
