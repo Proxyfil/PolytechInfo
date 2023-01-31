@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="fr">  
+ <head>
+  <meta charset="UTF-8">
+  <title>Jeux vidéos</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+
+ <body>
+ <h1>Video games</h1>
+ <form id="joueur" action="ficVide.php" method="post">
+   <label>
+     Votre pseudo : 
+     <input type="text" size="30" name="pseudo" maxlength="30" required pattern="[a-zA-Z0-9_]{4,30}"/>
+   </label>  
+   <h2>Fréquence</h2>
+   <p>Vous jouez aux jeux vidéos :</p>
+
+    <input type="radio" name="duree" value="d1">jamais<br>
+    <input type="radio" name="duree" value="d2">parfois<br>
+    <input type="radio" name="duree" value="d3">assez souvent<br> 
+    <input type="radio" name="duree" value="d4">moins d'1h par jour<br>
+    <input type="radio" name="duree" value="d5">entre 1h et 2h par jour<br>
+    <input type="radio" name="duree" value="d6">plus de 2h par jour<br>
+   
+
+   <h2>Types de jeux</h2>
+   <p>
+    Sélectionnez votre ou vos type(s) de jeux :
+   </p>    
+    <input type="checkbox" name="typeJeux[]" value="d1" />FPS (First Person Shooting)<br>
+    <input type="checkbox" name="typeJeux[]" value="d2" />MOBA (Multiplayer Online Battle Arena)<br>
+    <input type="checkbox" name="typeJeux[]" value="d3" />RPG (Role Player Game)<br>
+    <input type="checkbox" name="typeJeux[]" value="d4" />Hack 'n' slash<br>
+    <input type="checkbox" name="typeJeux[]" value="d5" />Beat them all<br>
+    <input type="checkbox" name="typeJeux[]" value="d6" />Autres (un peu de douceur dans ce monde de brutes)<br>
+  
+
+   <h2>Plateforme</h2>
+   <label for="platform">Sur quelle plateforme préférez-vous jouer? : </label>
+     <select id="platform" name="plateforme" size="4">
+	  <option value="p1" selected>PC</option>
+	  <option value="p2">PS4</option>
+	  <option value="p3">Nintendo switch</option>
+	  <option value="p4">Autre</option>
+     </select>     
+ 
+   <p><input class="margeHaute" type="submit" name="soumet" value="Valider"> </p>
+  </form>
+ </body>
+</html>

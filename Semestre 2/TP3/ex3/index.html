@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title >Exercice 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Commande du repas</h1>
+
+    <form>
+        <fieldset>
+            <legend>Votre identité:</legend>
+            <p>Lettres non accentuées, espace autorisé, chiffres interdits, au moins deux caractères, trente maximum, ne pas commencer ni finir par un espace</p>
+            <label>Nom:<input id="nom"></label>
+            <label>Prénom:<input id="prenom"></label>
+        </fieldset>
+
+        <h2>Entrée</h2>
+        <label>
+            Choisissez une entrée : <input type="radio" name="entree" value="ndsj">Noix de St Jacques<input type="radio" name="entree" value="ddj">Délices du jardin<input type="radio" name="entree" value="fg">Foie Gras<br>
+        </label>
+
+        <h2>Plat Principal</h2>
+        <label>
+            Choisissez une entrée : <input type="radio" name="entree" value="cdb">Côte de boeuf<input type="radio" name="entree" value="lal">Lasagnes aux légumes<input type="radio" name="entree" value="bdl">Bar de ligne<br>
+        </label>
+        <h2>Dessert</h2>
+        <p>Vous pouvez choisir plusieurs desserts :</p>
+        <input type="checkbox" name="desserts" value="cb"/>Crème brulée<br>
+        <input type="checkbox" name="desserts" value="sdff"/>Salade de fruits frais<br>
+        <input type="checkbox" name="desserts" value="calc"/>Choux à la crème<br>
+        <input type="checkbox" name="desserts" value="mac"/>Mousse au chocolat<br>
+        <input type="checkbox" name="desserts" value="o"/>Opéra<br>
+        <p>... mais vous aurez moins de chaque !</p>
+
+        <h2>Quantité</h2>
+        <label>sélectionner une quantité : 
+            <select id="platform" name="plateforme" size="4">
+                <option value="f" selected>frugal</option>
+                <option value="n">normal</option>
+                <option value="c">copieux</option>
+           </select> 
+        </label>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>

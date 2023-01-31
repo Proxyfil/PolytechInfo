@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 4</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Calcul d'un prix</h1>
+        <form id="soldes">
+            <label>Prix de départ : <input type="number" onchange="o.value=prix.value-(prix.value/100)*remise.value" name="prix">euros</label><br>
+            <label>Taux de remise : <input type="number" name="remise" onchange="o.value=prix.value-(prix.value/100)*remise.value">%</label>
+            <p>Prix final : <output name="o"></output> euros</p><br>
+
+            <p>Avez-vous trouvé cette page utile? Donner une note entre 0 et 5</p>
+            <label>Pas du tout <input type="range" min="0" max="5" onchange="note.value=slidernote.value" name="slidernote"> Carrément trop</label><br>
+
+            <label>Note : <output name="note"></output></label><br>
+            <button type="submit">Valider</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 5</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Inscription</h1>
+        <form name="newsletter">
+            <label>civilité
+                <input type="radio" name="civilite">M
+                <input type="radio" name="civilite">Mme
+                <input type="radio" name="civilite">Mlle
+            </label><br>
+            <label>Nom<input type="text" minlength="2" required autofocus></label>
+            <label>Prénom<input type="text" minlength="2" required></label><br>
+            <label>Adresse<input type="number" placeholder="N°"><input type="text" placeholder="Rue"><input type="number" maxLength="5" placeholder="Code postal"><input type="text" placeholder="Ville"></label><br>
+            <label>Adresse mail<input type="email" required></label>
+            <label>Mot de passe<input type="password" minlength="8" maxlength="16" pattern="[a-zA-Z0-9_\.-#]{8,16}" required></label>
+
+            <br>
+            <h2>Centres d'intérêts</h2>
+            <label><input type="checkbox" name="interets" value="eco">économie</label><br>
+            <label><input type="checkbox" name="interets" value="tech">high-tech</label><br>
+            <label><input type="checkbox" name="interets" value="po">politique</label><br>
+            <label><input type="checkbox" name="interets" value="spo">sport</label><br>
+            <label><input type="checkbox" name="interets" value="vp">vie pratique</label><br>
+
+            <button type="submit">Valider</button>
+        </form>
+    </body>
+</html>
