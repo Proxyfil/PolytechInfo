@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Demande de ticket</h1>
+        <form>
+            <h2>Type de problème :</h2>
+            <label><input type="radio" name="typep" value="travail" onchange="if(typep.value == 'info'){infos.disabled = false} else{infos.disabled = true}">Lieu de travail</label>
+            <label><input type="radio" name="typep" value="info" onchange="if(typep.value == 'info'){infos.disabled = false} else{infos.disabled = true}">Informatique</label>
+            <fieldset name="infos">
+                <label><input type="radio" value="pbm" name="more">Problème à résoudre</label>
+                <label><input type="radio" value="logiinst" name="more">Logiciel à installer</label>
+                <label><input type="radio" value="logiach" name="more">Logiciel à acheter</label>
+            </fieldset>
+            <textarea maxlength="400" name="desc"></textarea>
+
+            <button type="submit">Valider</button>
+
+        </form>
+    </body>
+</html>

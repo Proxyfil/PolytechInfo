@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="form" name="form">
+            <fieldset>
+                <legend>Mode de paiement</legend>
+                <label><input type="radio" name="mode" value="paypal" onchange="if(mode.value == 'paypal'){infos.disabled = true} else {infos.disabled = false}">Paypal</label>
+                <label><input type="radio" name="mode" value="cb" onchange="if(mode.value == 'paypal'){infos.disabled = true} else {infos.disabled = false}">Carte bancaire</label>
+            </fieldset>
+            <fieldset name="infos">
+                <legend>Ingos carte bancaire</legend>
+                <label>Nom<input type="text" name="nom"></label><br>
+                <label>Numéro<input type="text" name="num" maxlength="16" minlength="16" required></label><br>
+                <label>Date de validité<input type="number" name="date1" minlength="2" maxlength="2" required>/<input type="number" name="date2" minlength="2" maxlength="2" required></label><br>
+                <label>Code sécurité<input type="number" name="codesécu" required></label><br>
+        </form>
+        <label><button type="submit" form="form">Envoyer</button><button type="reset" form="form">Réinitialiser</button></label>
+    </body>
+</html>

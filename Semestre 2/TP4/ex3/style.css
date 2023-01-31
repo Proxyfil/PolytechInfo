@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(227, 95, 95);
+}
+
+label {
+    color: white;
+    font-family: 'arial';
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+input, select {
+    background-color: rgb(227, 95, 95);
+    border: none;
+    border-bottom: 1px dotted rgb(144, 52, 52);
+    color: rgb(144, 52, 52);
+    font-size: 30px;
+}
+
+input::placeholder{
+    color: rgb(144, 52, 52);
+    font-size: 30px; 
+}
+
+select, input{
+    appearance: none;
+    padding-bottom: 5px;
+}
+
+button{
+    padding: 0;
+    border: none;
+    height: 44px;
+}
+
+button input{
+    padding: 0;
+    border: none;
+}
