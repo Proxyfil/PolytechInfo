@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 1</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="corp">
+            <form id="container" action="get">
+                <div id="nameContainer" class="genericContainer">
+                    <p>Nom du porteur</p>
+                    <input name="name" type="text" required pattern="[a-z]{2,20} [A-Z]{2,20}">
+                </div>
+                <div id="numberContainer" class="genericContainer">
+                    <p>Numéro de carte</p>
+                    <input name="numero" type="text" required pattern="\d{4} \d{4} \d{4} \d{4}">
+                </div>
+                <div id="cardInfos">
+                    <div id="dateContainer">
+                        <p>Date de validité</p>
+                        <input id="date" name="date" type="text" required pattern="[01][0-9]\/[0-9][0-9]">
+                    </div>
+                    <div id="secretContainer">
+                        <p>Code de sécurité</p>
+                        <input name="secret" type="text" maxlength="3" minlength="3" required pattern="[0-9]{3}">
+                    </div>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div id="credit-card">
+                <span id="cardName"></span>
+                <span id="cardNumber"></span>
+                <span id="cardDate"></span>
+            </div>
+        </div>
+    </body>
+    <script>
+        var cardExpiration = document.getElementById("date");
+
+        cardExpiration.onkeyup = function() {
+            if(cardExpiration.value.slice(0, 2) > 12) {
+                cardExpiration.value = "";
+            }
+            if((cardExpiration.value.slice(3, 5) < 19 || cardExpiration.value.slice(3, 5) > 24) && cardExpiration.value.length == 5) {
+                cardExpiration.value = cardExpiration.value.slice(0, 3);
+            }
+            if (cardExpiration.value.length == 2) {
+                cardExpiration.value += "/";
+            }
+
+            document.getElementById("cardDate").innerHTML = cardExpiration.value;
+        }
+
+        var cardNumber = document.getElementsByName("numero")[0];
+
+        cardNumber.onkeyup = function() {
+            document.getElementById("cardNumber").innerHTML = cardNumber.value;
+        }
+
+        var cardName = document.getElementsByName("name")[0];
+
+        cardName.onkeyup = function() {
+            document.getElementById("cardName").innerHTML = cardName.value;
+        }
+    </script>
+</html>
